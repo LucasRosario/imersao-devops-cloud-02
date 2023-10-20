@@ -1,8 +1,8 @@
-FROM node:18.16.0
+FROM node:18.12.0
 WORKDIR /app
 COPY package*.json ./
 RUN npm set strict-ssl false
 RUN npm install
 COPY . .
-EXPOSE 8081
+EXPOSE 8082
 CMD ["node", "server.js"]
