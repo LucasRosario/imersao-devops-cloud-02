@@ -24,7 +24,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v5.0.0
         with:
-          context: ./kube-news/k8s
+          context: ./kube-news/src
           file: ./kube-news/src/Dockerfile
           push: true
           tags: |
