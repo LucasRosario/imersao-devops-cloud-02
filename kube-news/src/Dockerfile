@@ -1,6 +1,6 @@
 FROM node:18.12.0
 WORKDIR /app
-COPY package*.json /.
+COPY package*.json ./
 RUN npm set strict-ssl false && npm install
 COPY . .
 EXPOSE 8082
